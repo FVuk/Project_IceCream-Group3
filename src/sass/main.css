@@ -171,6 +171,9 @@ figure {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
 .btn-list__item:hover, .btn-list__item:focus {
   background-color: #ecebeb;
@@ -181,6 +184,13 @@ figure {
 }
 .btn-list__item--pink:hover, .btn-list__item--pink:focus {
   background: #d41342;
+}
+.btn-list__icon {
+  fill: #ffffff;
+  margin-left: 8px;
+}
+.btn-list__icon--pink {
+  fill: #d41443;
 }
 
 @media screen and (min-width: 768px) {
@@ -223,6 +233,14 @@ figure {
   .btn-list__item {
     padding: 10px 35px;
   }
+  .btn-list__icon {
+    fill: #ffffff;
+    margin-left: 8px;
+    width: 4.28px;
+  }
+  .btn-list__icon--pink {
+    fill: #d41443;
+  }
 }
 @media screen and (min-width: 1200px) {
   .contacts-section {
@@ -231,10 +249,22 @@ figure {
   }
   .grid {
     padding-bottom: 86px;
+    background-image: url("./../images/contacts/spots.png");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .grid {
+    background-image: url("./../images/contacts/spots@2x.png");
+  }
+}
+@media screen and (min-width: 1200px) {
   .grid .card:nth-child(1) {
     margin-top: -112px;
   }
+}
+@media screen and (min-width: 1200px) {
   .card {
     padding: 51px 44px 62px 43px;
     width: 330px;
@@ -253,12 +283,22 @@ figure {
     font-size: 16px;
     line-height: 1.81;
   }
+}
+@media screen and (min-width: 1200px) {
   .btn-list {
     padding-bottom: 165px;
     gap: 14.5px;
   }
   .btn-list__item {
     padding: 10px 36px;
+  }
+  .btn-list__icon {
+    fill: #ffffff;
+    margin-left: 8px;
+    width: 4.43px;
+  }
+  .btn-list__icon--pink {
+    fill: #d41443;
   }
 }
 .is-hidden {
