@@ -58,6 +58,28 @@ p {
     width: 1200px;
   }
 }
+.adventages {
+  color: yellow;
+  background-color: #fff5f6;
+  display: flex;
+}
+
+.adventages-heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  color: #d41443;
+}
+
+.adventages-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.74;
+}
+
 h1,
 h2,
 h4,
