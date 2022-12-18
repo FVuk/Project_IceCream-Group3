@@ -1,11 +1,18 @@
 .advantages {
   background-color: $lightPinkBgColor;
   display: flex;
-  // align-items: center;
   flex-direction: column;
+
+  &__hiden {
+    margin: 0;
+    display: none;
+  }
   &__figure {
     margin-left: 20px;
     margin-top: 38px;
+    .image:hover {
+      color: $lightPinkBgColor;
+    }
     .figure-caption {
       display: flex;
       flex-direction: column;
@@ -37,6 +44,7 @@
 }
 @media screen and (min-width: 768px) {
   .advantages {
+    min-width: 1200px;
     display: flex;
     flex-direction: row;
     gap: 60px;
